@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Gradient background */
+  }
+  
+  .game-container {
+    text-align: center;
+    position: relative;
+  }
+  
+  canvas {
+    display: block;
+    border: 10px solid #ffcc00; /* Pattern border */
+    border-radius: 10px;
+    margin: 0 auto;
+    background: url('https://i.postimg.cc/htGN8fKx/flappy-bird-background-vnzm62ypakupicll.webp') no-repeat center;
+    background-size: cover; /* Canvas background */
+  }
+  
+  #start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #start-button:hover {
+    background-color: #555;
+  }
+  
+  #game-over-popup {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    text-align: left; /* Align content to left */
+    width: 250px; /* Set width for better layout */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+  }
+  
+  #game-over-popup h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  #final-score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00; /* Highlight the final score */
+  }
+  
+  #retry-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #retry-button:hover {
+    background-color: #555;
+  }
+  
